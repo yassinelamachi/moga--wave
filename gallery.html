@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gallery - View stunning photos from Mogawave surf and yoga lessons in Essaouira, Morocco.">
+    <meta name="keywords" content="gallery, surf photos, yoga photos, Essaouira, Morocco">
+    <title>Gallery | Mogawave - Surf & Yoga Lessons</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Mogawave Logo" class="logo-image">
+                <span>Mogawave</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" data-translate="nav.home">Home</a></li>
+                <li><a href="booking.html" data-translate="nav.booking">Book a Lesson</a></li>
+                <li><a href="gallery.html" class="active" data-translate="nav.gallery">Gallery</a></li>
+                <li><a href="about.html" data-translate="nav.about">About Us</a></li>
+                <li><a href="#contact" data-translate="nav.contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Gallery Header Section -->
+    <section class="gallery-header">
+        <div class="container">
+            <h1>Our Gallery</h1>
+            <p>Explore moments of adventure, skill, and peace from our surf and yoga lessons in Essaouira</p>
+        </div>
+    </section>
+
+    <!-- Gallery Filters -->
+    <section class="gallery-filters-section">
+        <div class="container">
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">All Photos</button>
+                <button class="filter-btn" data-filter="surf">Surf Lessons</button>
+                <button class="filter-btn" data-filter="yoga">Yoga Lessons</button>
+                <button class="filter-btn" data-filter="beach">Beach Vibes</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="gallery-section">
+        <div class="container">
+            <div class="gallery-grid">
+                <!-- Surf Photos -->
+                <div class="gallery-item" data-category="surf">
+                    <div class="gallery-image">
+                        <img src="images/gallery-surf-1.jpg" alt="Surf lesson in action">
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="surf">
+                    <div class="gallery-image">
+                        <img src="images/gallery-surf-2.jpg" alt="Student catching waves">
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="surf">
+                    <div class="gallery-image">
+                        <img src="images/gallery-surf-3.jpg" alt="Surfboard lesson">
+                    </div>
+                </div>
+
+                <!-- Yoga Photos -->
+                <div class="gallery-item" data-category="yoga">
+                    <div class="gallery-image">
+                        <img src="images/gallery-yoga-1.jpg" alt="Yoga session on beach">
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="yoga">
+                    <div class="gallery-image">
+                        <img src="images/gallery-yoga-2.jpg" alt="Meditation by the sea">
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="yoga">
+                    <div class="gallery-image">
+                        <img src="images/gallery-yoga-3.jpg" alt="Beachside yoga class">
+                    </div>
+                </div>
+
+                <!-- Beach Vibes Photos -->
+                <div class="gallery-item" data-category="beach">
+                    <div class="gallery-image">
+                        <img src="images/gallery-beach-1.jpg" alt="Essaouira beach sunset">
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="beach">
+                    <div class="gallery-image">
+                        <img src="images/gallery-beach-2.jpg" alt="Beautiful coastline">
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="beach">
+                    <div class="gallery-image">
+                        <img src="images/gallery-beach-3.jpg" alt="Beach landscape">
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="all">
+                    <div class="gallery-image">
+                        <img src="images/gallery-group-1.jpg" alt="Group photo with students">
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="surf">
+                    <div class="gallery-image">
+                        <img src="images/gallery-surf-4.jpg" alt="Advanced surfer">
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="yoga">
+                    <div class="gallery-image">
+                        <img src="images/gallery-yoga-4.jpg" alt="Yoga stretching">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Create Your Own Adventure?</h2>
+            <p>Join us for an unforgettable experience in Essaouira</p>
+            <a href="booking.html" class="btn">Book Your Lesson Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h3><i class="fas fa-map-marker-alt"></i> Location</h3>
+                        <p>Essaouira Beach</p>
+                        <p>Morocco</p>
+                        <p class="footer-small">Gateway to Atlantic waves</p>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h3><i class="fas fa-phone-alt"></i> Contact</h3>
+                        <p><a href="https://wa.me/212608418714" target="_blank">WhatsApp: +212 608-418714</a></p>
+                        <p><a href="mailto:rayanamzil12@icloud.com">Email: rayanamzil12@icloud.com</a></p>
+                        <p class="footer-small">Available 7 days a week</p>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h3><i class="fas fa-clock"></i> Hours</h3>
+                        <p>Monday - Sunday</p>
+                        <p>10:00 AM - 6:00 PM</p>
+                        <p class="footer-small">Flexible scheduling available</p>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h3><i class="fas fa-share-alt"></i> Follow Us</h3>
+                        <div class="social-links">
+                            <a href="https://wa.me/212608418714" class="social-link" title="WhatsApp" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+                            <a href="https://www.instagram.com/mogawavee" class="social-link" title="Instagram" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.tiktok.com/@mogawave.essaouira" class="social-link" title="TikTok" target="_blank" rel="noopener"><i class="fab fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-divider"></div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p class="copyright">Mogawave Surf & Yoga Lessons</p><b>Powered by LAMACHI</b>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="gallery.js"></script>
+    <script src="translations.js"></script>
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Book your surf or yoga lesson with Mogawave in Essaouira, Morocco. Easy online booking with flexible scheduling.">
+    <title>Book Your Lesson | Mogawave - Surf & Yoga</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Mogawave Logo" class="logo-image">
+                <span>Mogawave</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" data-translate="nav.home">Home</a></li>
+                <li><a href="booking.html" class="active" data-translate="nav.booking">Book a Lesson</a></li>
+                <li><a href="gallery.html" data-translate="nav.gallery">Gallery</a></li>
+                <li><a href="about.html" data-translate="nav.about">About Us</a></li>
+                <li><a href="#contact" data-translate="nav.contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Booking Form Section -->
+    <section class="booking-section" style="padding-top: 120px; min-height: calc(100vh - 70px);">
+        <div class="container">
+            <h2>Book Your Lesson</h2>
+            <div class="booking-container">
+                <p class="lead text-center">Choose your lesson type and select your preferred date and time.</p>
+                
+                <div id="bookingMessage" style="display: none; margin-bottom: 20px; padding: 15px; border-radius: 10px; text-align: center;"></div>
+                
+                <form id="bookingForm" method="POST">
+                    <div class="form-group">
+                        <label for="lesson_type">Lesson Type <span style="color: var(--secondary);">*</span></label>
+                        <select id="lesson_type" name="lesson_type" class="form-control" required>
+                            <option value="">Select a lesson type</option>
+                            <option value="surf">🏄 Surf Lesson</option>
+                            <option value="yoga">🧘 Yoga Lesson</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="name">Full Name <span style="color: var(--secondary);">*</span></label>
+                        <input type="text" id="name" name="name" class="form-control" required placeholder="John Doe">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address <span style="color: var(--secondary);">*</span></label>
+                        <input type="email" id="email" name="email" class="form-control" required placeholder="your.email@example.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="whatsapp">WhatsApp Number (Optional)</label>
+                        <input type="tel" id="whatsapp" name="whatsapp" class="form-control" placeholder="+212 6XX-XXXXXX">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lesson_date">Preferred Lesson Date <span style="color: var(--secondary);">*</span></label>
+                        <input type="date" id="lesson_date" name="lesson_date" class="form-control" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Preferred Contact Method <span style="color: var(--secondary);">*</span></label>
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <input type="radio" id="whatsapp_contact" name="contact_method" value="whatsapp" checked>
+                                <label for="whatsapp_contact">
+                                    <i class="fab fa-whatsapp"></i>
+                                    WhatsApp
+                                </label>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <input type="radio" id="email_contact" name="contact_method" value="email">
+                                <label for="email_contact">
+                                    <i class="fas fa-envelope"></i>
+                                    Email
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Additional Message (Optional)</label>
+                        <textarea id="message" name="message" class="form-control" placeholder="Tell us about your experience level, group size, or any special requests..."></textarea>
+                    </div>
+
+                    <div class="form-group" style="text-align: center; margin-top: 2rem;">
+                        <button type="submit" class="btn" id="submitBtn">Book My Lesson</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h3><i class="fas fa-map-marker-alt"></i> Location</h3>
+                        <p>Essaouira Beach</p>
+                        <p>Morocco</p>
+                        <p class="footer-small">Gateway to Atlantic waves</p>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h3><i class="fas fa-phone-alt"></i> Contact</h3>
+                        <p><a href="https://wa.me/212608418714" target="_blank">WhatsApp: +212 608-418714</a></p>
+                        <p><a href="mailto:rayanamzil12@icloud.com">Email: rayanamzil12@icloud.com</a></p>
+                        <p class="footer-small">Available 7 days a week</p>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h3><i class="fas fa-clock"></i> Hours</h3>
+                        <p>Monday - Sunday</p>
+                        <p>10:00 AM - 6:00 PM</p>
+                        <p class="footer-small">Flexible scheduling available</p>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h3><i class="fas fa-share-alt"></i> Follow Us</h3>
+                        <div class="social-links">
+                            <a href="https://wa.me/212608418714" class="social-link" title="WhatsApp" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+                            <a href="https://www.instagram.com/mogawavee" class="social-link" title="Instagram" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.tiktok.com/@mogawave.essaouira" class="social-link" title="TikTok" target="_blank" rel="noopener"><i class="fab fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-divider"></div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p class="copyright">Mogawave Surf & Yoga Lessons</p><b>Powered by LAMACHI</b>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="booking-handler.js"></script>
+    <script src="translations.js"></script>
+    
+    <style>
+        .message {
+            padding: 15px 20px;
+            border-radius: 10px;
+            font-weight: 500;
+            margin-bottom: 20px;
+            animation: fadeInUp 0.4s ease-out;
+        }
+        
+        .message.success {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        
+        .message.error {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        
+        .message a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 15px;
+            background-color: rgba(255, 255, 255, 0.3);
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        
+        .message a:hover {
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</body>
+</html>
